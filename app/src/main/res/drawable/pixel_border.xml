@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 外阴影 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    
+    <!-- 主背景，偏移1dp形成轻微阴影效果 -->
+    <item android:left="1dp" android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    
+    <!-- 像素风格边框 - 上边框 -->
+    <item android:top="0dp" android:left="1dp" android:right="0dp" android:height="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" />
+        </shape>
+    </item>
+    
+    <!-- 像素风格边框 - 左边框 -->
+    <item android:left="0dp" android:top="0dp" android:bottom="0dp" android:width="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" />
+        </shape>
+    </item>
+    
+    <!-- 像素风格边框 - 右边框 -->
+    <item android:right="0dp" android:top="0dp" android:bottom="0dp" android:gravity="right" android:width="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" />
+        </shape>
+    </item>
+    
+    <!-- 像素风格边框 - 下边框 -->
+    <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:gravity="bottom" android:height="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" />
+        </shape>
+    </item>
+    
+    <!-- 内容区域边距 -->
+    <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

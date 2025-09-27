@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/pixel_border">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑任务"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="任务内容："
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace" />
+
+    <EditText
+        android:id="@+id/editTaskContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入任务内容"
+        android:background="@drawable/pixel_border"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择象限："
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace" />
+
+    <Spinner
+        android:id="@+id/spinnerQuadrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pixel_border"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:background="@drawable/pixel_border"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:background="@drawable/pixel_border"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+</LinearLayout>
